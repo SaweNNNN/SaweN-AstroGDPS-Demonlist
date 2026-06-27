@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AstroGDPS's Demon List</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Manrope',sans-serif;
+}
+
+body{
+    min-height:100vh;
+    background:radial-gradient(circle at top,#1c1c1c,#0a0a0a 60%,#050505);
+    color:white;
+    padding:60px 20px;
+}
+
+.container{
+    max-width:900px;
+    margin:auto;
+}
+
+header{
+    text-align:center;
+    margin-bottom:50px;
+}
+
+header h1{
+    font-size:58px;
+    font-weight:400;
+    letter-spacing:-3px;
+    background:linear-gradient(#fff,#bdbdbd);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+}
+
+header p{
+    margin-top:10px;
+    color:#8a8a8a;
+}
+
+/* карточка */
+.demon{
+    width:80%;
+    margin:auto;
+    background:linear-gradient(180deg,rgba(255,255,255,.06),rgba(255,255,255,.02));
+    border:1px solid rgba(255,255,255,.08);
+    border-radius:30px;
+    padding:34px 40px;
+    backdrop-filter:blur(20px);
+    transition:.25s;
+}
+
+.demon:hover{
+    transform:translateY(-4px);
+    border-color:rgba(255,255,255,.18);
+}
+
+.top{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.rank{
+    font-size:30px;
+    font-weight:400;
+}
+
+.place{
+    color:#888;
+    font-size:14px;
+}
+
+/* difficulty auto */
+.difficulty{
+    font-size:12px;
+    font-weight:600;
+    padding:6px 10px;
+    border-radius:999px;
+    border:1px solid rgba(255,255,255,.15);
+}
+
+/* verifier */
+.verifier{
+    margin-top:10px;
+    color:#666;
+    font-size:14px;
+}
+
+/* empty slots */
+.empty{
+    color:#777;
+    background:rgba(255,255,255,.03);
+    border:1px dashed rgba(255,255,255,.15);
+}
+
+.list{
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+}
+
+@media(max-width:768px){
+    .demon{width:95%; padding:26px;}
+    header h1{font-size:36px;}
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<header>
+    <h1>AstroGDPS's Demon List</h1>
+    <p>SaweN's Edition</p>
+</header>
+
+<div class="list">
+
+    <!-- 1 -->
+    <div class="demon">
+        <div class="top">
+            <div class="rank">Dreamy</div>
+            <div class="difficulty">Extreme Demon</div>
+        </div>
+        <div class="verifier">Verified by Nelk3311</div>
+    </div>
+
+    <!-- 2 -->
+    <div class="demon">
+        <div class="top">
+            <div class="rank">Bomb</div>
+            <div class="difficulty">Extreme Demon</div>
+        </div>
+        <div class="verifier">Verified by Nelk3311</div>
+    </div>
+
+    <!-- 3 -->
+    <div class="demon">
+        <div class="top">
+            <div class="rank">Israel Circles</div>
+            <div class="difficulty">Insane Demon</div>
+        </div>
+        <div class="verifier">Verified by Piska142</div>
+    </div>
+
+    <!-- 🔳 4 NEXT SLOT -->
+    <div class="demon">
+        <div class="top">
+            <div class="rank">Next Level #4</div>
+            <div class="difficulty empty">Empty Slot</div>
+        </div>
+        <div class="verifier">Click to add level name + verifier</div>
+    </div>
+
+    <!-- 🔳 5 NEXT SLOT -->
+    <div class="demon">
+        <div class="top">
+            <div class="rank">Next Level #5</div>
+            <div class="difficulty empty">Empty Slot</div>
+        </div>
+        <div class="verifier">Click to add level name + verifier</div>
+    </div>
+
+</div>
+
+</div>
+
+</body>
+</html>
